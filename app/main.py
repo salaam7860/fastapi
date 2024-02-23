@@ -42,5 +42,3 @@ select users.id, users.email, count(posts.id) as user_post_count from posts righ
 select posts.*, count(votes.post_id) from posts left join votes on posts.id = votes.post_id group by posts.id;
 '''
 
-
-# https://youtu.be/0sOvCWFmrtA?t=39119
