@@ -40,5 +40,10 @@ select * from posts right join users on posts.owner_id = users.id;
 select users.id, users.email, count(posts.id) as user_post_count from posts right join users on posts.owner_id = users.id group by users.id;
 
 select posts.*, count(votes.post_id) from posts left join votes on posts.id = votes.post_id group by posts.id;
+
+
+##################
+IMPORTANT
+set -o allexport; source /home/ubuntu/.env; set +o allexport
 '''
 
